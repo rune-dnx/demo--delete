@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20240513/MODEL/" expressionLanguage="https://www.omg.org/spec/DMN/20240513/FEEL/" namespace="https://kie.org/dmn/_B200EAA6-3D79-4A67-BE8D-CAF287547E4F" id="_7C859570-5ABF-4746-908F-BC7F135EBA0B" name="DMN_CF896963-E5BE-45F0-AEAE-EABAE816899A" xmlns:dmndi="https://www.omg.org/spec/DMN/20230324/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="https://kie.org/dmn/extensions/1.0">
+  <decision name="New Decision" id="_E3F95CC1-AB1D-483C-AED0-5CB9835801C9">
+    <variable id="_79D96CD5-645E-49E3-94E3-A4F4FAACBBBC" name="New Decision" />
+    <informationRequirement id="_6A64B183-0C4E-49C4-A06E-532EF4898191">
+      <requiredInput href="#_0AA1C10C-A9B0-4329-8055-27E36D0AD958" />
+    </informationRequirement>
+  </decision>
+  <inputData name="New Input Data" id="_0AA1C10C-A9B0-4329-8055-27E36D0AD958">
+    <variable name="New Input Data" id="_87C27731-8F93-4359-AF18-694F81F15771" />
+  </inputData>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="_EFCA9BDC-D082-4E93-9650-FB6DC0E74B1C" name="Default DRD" useAlternativeInputDataShape="false">
+      <di:extension>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths />
+        </kie:ComponentsWidthsExtension>
+      </di:extension>
+      <dmndi:DMNShape id="_EFB53FA2-F9BE-4B98-AF9E-2A49E6DC41EE" dmnElementRef="_0AA1C10C-A9B0-4329-8055-27E36D0AD958" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="100" y="300" width="160" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="_B0953C5D-3831-4759-AFC5-0CB79D5CD433" dmnElementRef="_E3F95CC1-AB1D-483C-AED0-5CB9835801C9" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="100" y="100" width="160" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="_7E31C1F2-B752-4D78-B07E-C1061F0A4474-AUTO-TARGET" dmnElementRef="_6A64B183-0C4E-49C4-A06E-532EF4898191" sourceElement="_EFB53FA2-F9BE-4B98-AF9E-2A49E6DC41EE" targetElement="_B0953C5D-3831-4759-AFC5-0CB79D5CD433">
+        <di:waypoint x="180" y="340" />
+        <di:waypoint x="180" y="140" />
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
