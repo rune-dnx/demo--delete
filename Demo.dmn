@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20240513/MODEL/" expressionLanguage="https://www.omg.org/spec/DMN/20240513/FEEL/" namespace="https://kie.org/dmn/_7F1EBF36-B389-4E02-BE0C-29EF1E8E8E97" id="_8B6FC6A1-6024-4B58-81D8-D03E159F2315" name="DMN_A532A40F-72AE-475A-B557-1190C14D9676" xmlns:dmndi="https://www.omg.org/spec/DMN/20230324/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="https://kie.org/dmn/extensions/1.0">
+  <decision name="Demo" id="_D41AD29A-6CC2-47A4-81CB-0FF93E62FB17">
+    <variable id="_456743B2-824C-4308-9E3C-C0DDFF96D9FD" typeRef="string" name="Demo" />
+    <informationRequirement id="_981105A9-D127-4A41-BD63-16E2599E38A1">
+      <requiredInput href="#_50D814A3-FC95-4A56-A0DC-7135D4A19F64" />
+    </informationRequirement>
+    <conditional id="_3CB0F65B-490C-49E8-B219-57EFDA791636" typeRef="string" label="Demo">
+      <if id="_EBFCA34A-2B0A-40C7-BFCB-7BD124E99BFF">
+        <literalExpression id="_7AB801FD-EB5B-4F0B-B474-0D4228457FF7" label="Expression Name">
+          <text>Age &gt;= 20</text>
+        </literalExpression>
+      </if>
+      <then id="_8CA2AECF-3482-4D52-9181-62A6BFCB21DC">
+        <literalExpression id="_F9350FA9-A2FB-47AE-A30C-3E096BC8EDB5" label="Expression Name">
+          <text>&quot;Demo services is ok&quot;</text>
+        </literalExpression>
+      </then>
+      <else id="_8212CE26-748B-4144-AEBD-DB7D39116C3A">
+        <literalExpression id="_5A747D81-4A3E-4E7E-ABF7-49115BECF4DE" label="Expression Name">
+          <text>&quot;Demo is ok, but bellow 20&quot;</text>
+        </literalExpression>
+      </else>
+    </conditional>
+  </decision>
+  <inputData name="Age" id="_50D814A3-FC95-4A56-A0DC-7135D4A19F64">
+    <variable name="Age" id="_5FD6AFC5-F5EC-4B4B-8397-2296BD5785E6" typeRef="number" />
+  </inputData>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="_779DA231-8BAD-4A3D-9F43-52B6DF8789B7" name="Default DRD" useAlternativeInputDataShape="false">
+      <di:extension>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_7AB801FD-EB5B-4F0B-B474-0D4228457FF7">
+            <kie:width>190</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_F9350FA9-A2FB-47AE-A30C-3E096BC8EDB5">
+            <kie:width>190</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_5A747D81-4A3E-4E7E-ABF7-49115BECF4DE">
+            <kie:width>190</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
+      </di:extension>
+      <dmndi:DMNShape id="_901657F0-2400-40E3-85EF-4F4169502DB3" dmnElementRef="_50D814A3-FC95-4A56-A0DC-7135D4A19F64" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="100" y="300" width="160" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="_F920B313-D55A-4E25-88FD-D35CCAFA2746" dmnElementRef="_D41AD29A-6CC2-47A4-81CB-0FF93E62FB17" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="100" y="100" width="160" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="_E114D1C9-F7EA-4EC0-8062-EC8AA92C2A60-AUTO-TARGET" dmnElementRef="_981105A9-D127-4A41-BD63-16E2599E38A1" sourceElement="_901657F0-2400-40E3-85EF-4F4169502DB3" targetElement="_F920B313-D55A-4E25-88FD-D35CCAFA2746">
+        <di:waypoint x="180" y="340" />
+        <di:waypoint x="180" y="140" />
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
