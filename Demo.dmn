@@ -45,11 +45,11 @@
         <dc:Bounds x="100" y="300" width="160" height="80" />
       </dmndi:DMNShape>
       <dmndi:DMNShape id="_F920B313-D55A-4E25-88FD-D35CCAFA2746" dmnElementRef="_D41AD29A-6CC2-47A4-81CB-0FF93E62FB17" isCollapsed="false" isListedInputData="false">
-        <dc:Bounds x="-20" y="120" width="160" height="80" />
+        <dc:Bounds x="140" y="100" width="160" height="80" />
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="_E114D1C9-F7EA-4EC0-8062-EC8AA92C2A60-AUTO-TARGET" dmnElementRef="_981105A9-D127-4A41-BD63-16E2599E38A1" sourceElement="_901657F0-2400-40E3-85EF-4F4169502DB3" targetElement="_F920B313-D55A-4E25-88FD-D35CCAFA2746">
         <di:waypoint x="180" y="340" />
-        <di:waypoint x="60" y="160" />
+        <di:waypoint x="220" y="140" />
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
